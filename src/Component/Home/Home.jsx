@@ -10,6 +10,7 @@ import MostPopularProduct from "./Component/MostPopularProduct";
 const Home = () => {
   return (
     <>
+    <p>Test</p>
       <Hero />
       <Category />
       <BestSellingProducts />
