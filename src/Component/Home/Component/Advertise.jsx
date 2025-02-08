@@ -1,4 +1,11 @@
-"use strict";
+import { Card } from "antd";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
-Object.defin
+const Advertise = () => {
+  return (
+    <div>
+      <Card></Card>
+    </div>
+  );
+};
+
+export default Advertise;
