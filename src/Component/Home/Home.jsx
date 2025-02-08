@@ -13,11 +13,11 @@ const Home = () => {
       <Hero />
       <Category />
       <BestSellingProducts />
-      <FeaturedProduct/> 
-      <DiscountForm/>
+      <FeaturedProduct />
+      <DiscountForm />
       <MostPopularProduct />
-      <JustArrived/>
-      <Blogs/>
+      <JustArrived />
+      <Blogs />
     </>
   );
 };

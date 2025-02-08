@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { Layout, Space, Input, Button } from "antd";
 import Images from "../../ImageComponent/Images";
 import {
   FacebookOutlined,
@@ -17,6 +17,11 @@ const listStyle = {
   fontSize: "15px",
 };
 
+const linkStyle = {
+  color: "black",
+  fontSize: "1.2em",
+};
+
 const FooterComponent = () => {
   return (
     <Footer
@@ -24,105 +29,145 @@ const FooterComponent = () => {
         width: "100%",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "start",
-        backgroundColor: "#f2c3d4",
-        padding: "20px",
+        margin: "3em auto",
+        gap: "60px",
       }}
     >
-      <div style={{ display: "flex", gap: "60px" }}>
-        <div>
-          <img src={Images.OrganicLogo} width="240" height="70" alt="Logo" />
-          <div
-            style={{
-              fontSize: "25px",
-              display: "flex",
-              gap: "15px",
-              marginTop: "10px",
-            }}
-          >
-            <FacebookOutlined />
-            <TwitterOutlined />
-            <YoutubeOutlined />
-            <InstagramOutlined />
-            <AmazonOutlined />
-          </div>
+      <div>
+        <img src={Images.OrganicLogo} width="240" height="70" alt="Logo" />
+        <div
+          style={{
+            fontSize: "25px",
+            display: "flex",
+            gap: "15px",
+            marginTop: "10px",
+          }}
+        >
+          <FacebookOutlined />
+          <TwitterOutlined />
+          <YoutubeOutlined />
+          <InstagramOutlined />
+          <AmazonOutlined />
         </div>
-        <div>
-          <h2>Organic</h2>
-          <ul>
-            <li style={listStyle}>
-              <a href="/">About Us</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Conditions</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Our Journals</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Career</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Affiliate Programme</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Ultras Press</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Quick Links</h2>
-          <ul>
-            <li style={listStyle}>
-              <a href="/">Offers</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Discount Coupons</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Stores</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Track Order</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Shop</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Customer Service</h2>
-          <ul>
-            <li style={listStyle}>
-              <a href="/">FAQ</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Contact</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Privacy Policy</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Return & Refund</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Cookie Guidelines</a>
-            </li>
-            <li style={listStyle}>
-              <a href="/">Delivery Information</a>
-            </li>
-          </ul>
-        </div>
-        <div>
+      </div>
+      <div>
+        <h2>Organic</h2>
+        <ul>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              About Us
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Conditions
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Our Journals
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Career
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Affiliate Programme
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Ultras Press
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Offers
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Discount Coupons
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Stores
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Track Order
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Shop
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Customer Service</h2>
+        <ul>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              FAQ
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Contact
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Privacy Policy
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Return & Refund
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Cookie Guidelines
+            </a>
+          </li>
+          <li style={listStyle}>
+            <a href="/" style={linkStyle}>
+              Delivery Information
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
         <h2>Subscribe Us</h2>
-        <p>
+        <p style={linkStyle}>
           Subscribe to our newsletter to get <br /> updates about our grand
           offers.
         </p>
+        <Space.Compact
+          style={{
+            width: "100%",
+            margin:"1em auto"
+          }}
+        >
+          <Input/>
+          <Button type="primary">Submit</Button>
+        </Space.Compact>
       </div>
-      </div>
-      
     </Footer>
   );
 };
