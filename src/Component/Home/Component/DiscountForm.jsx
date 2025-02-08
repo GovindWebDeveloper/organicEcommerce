@@ -7,8 +7,8 @@ const DiscountForm = () => {
         backgroundImage: `url(${Images.BgDiscountForm})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        width: "95%",
-        height: "400px",
+        width: "90%",
+        height: "450px",
         margin: "auto",
       }}
     >

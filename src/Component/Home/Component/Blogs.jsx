@@ -24,28 +24,33 @@ const blogImage = [
 
 const Blogs = () => {
   return (
-    <div>
-      <div>
-        <h1>Our Recent Blog</h1>
+    <div
+      style={{ width: "100%", padding: "40px 20px" }}
+    >
+      <div style={{width:"90%", alignItems:"center", margin:"auto"}}>
+        <h1 style={{marginBottom:"1em"}}>Our Recent Blog</h1>
         <div
           style={{
             display: "flex",
-            justifyContent: "space-evenly",
+            justifyContent: "space-between",
             alignItems: "center",
-            gap: "20px",
-            margin: "auto",
+            gap: "1em",
           }}
         >
           {blogImage.map((blog) => (
             <Card
               key={blog.id}
               style={{
-                width: "450px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "start",
+                width: "400px",
                 height: "500px",
-                padding: "20px",
+                padding: "10px",
+                textAlign: "center",
               }}
             >
-              <img src={blog.img} alt="Blog Image" style={{ width: "400px" }} />
+              <img src={blog.img} alt="Blog Image" style={{ width: "350px" }} />
               <h1>{blog.heading}</h1>
               <p>{blog.para}</p>
             </Card>
