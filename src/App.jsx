@@ -1,4 +1,4 @@
-import MainLayout from "./Component/Layout/Main/MainLayout"
+import MainLayout from "./Layout/Main/MainLayout"
 
 function App() {
 
