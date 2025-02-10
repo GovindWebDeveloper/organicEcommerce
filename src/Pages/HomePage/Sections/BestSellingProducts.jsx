@@ -1,7 +1,7 @@
 // import Images from "../../ImageComponent/Images";
 import SliderComponent from "../../../Component/SliderComponent/SliderComponent";
-import {useEffect,useState} from "react"
-import { getfeaturedProducts } from "../../../Services/ProductServices"; 
+import { useEffect, useState } from "react";
+import { getJewelleryProducts } from "../../../Services/ProductServices";
 
 // const categories = [
 //   { id: 1, name: "Whole Wheat Sandwich Bread", img: Images.ProductThumb1 },
@@ -24,34 +24,31 @@ import { getfeaturedProducts } from "../../../Services/ProductServices";
 //   { id: 10, name: "Greek Style Plain Yogurt", img: Images.ProductThumb10 },
 // ];
 
-
-
 const BestSellingProducts = () => {
-
   const [jevelProduct, setJevelProduct] = useState([]); // Holds product data
-    const [error, setError] = useState(null); // Holds API error messages
-  
-    useEffect(() => {
-      async function fetchData() {
-        try {
-          const data = await getfeaturedProducts();
-          console.log("fetched Data:", data);
-          setJevelProduct(data || []); // Ensure data is always an array
-        } catch (error) {
-          setError("Failed to load products"); // Store error message
-          console.error("Error loading products:", error);
-        }
+  const [error, setError] = useState(null); // Holds API error messages
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await getJewelleryProducts();
+
+        setJevelProduct(data || []); // Ensure data is always an array
+      } catch (error) {
+        setError("Failed to load products"); // Store error message
+        console.error("Error loading products:", error);
       }
-  
-      fetchData();
-    }, []);
+    }
+
+    fetchData();
+  }, []);
 
   return (
     // <div>
     //   <SliderComponent
     //     title="Best Selling Products"
-    //     items={categories} 
-    //     imageStyle={{ borderRadius: "0px" }} 
+    //     items={categories}
+    //     imageStyle={{ borderRadius: "0px" }}
     //   />
     // </div>
     <div>
@@ -60,7 +57,7 @@ const BestSellingProducts = () => {
 
       {/* Show the slider only if there are products */}
       {jevelProduct.length > 0 ? (
-        <SliderComponent title="Category" items={jevelProduct} />
+        <SliderComponent title="Jewellery" items={jevelProduct} />
       ) : !error ? (
         <p>Loading products...</p> // Show loading message if API is still fetching
       ) : null}
