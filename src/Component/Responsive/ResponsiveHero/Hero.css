@@ -1,0 +1,111 @@
+
+@media (max-width: 1200px) {
+    .hero-container {
+      width: 95% !important;
+    }
+  
+    .hero-heading {
+      font-size: 5em !important;
+    }
+  
+    .hero-button {
+      font-size: 1.3em !important;
+      padding: 1.2em !important;
+    }
+  
+    .hero-stats {
+      gap: 1.5em !important;
+    }
+  }
+  
+  /* Tablet Devices (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .hero-container {
+      width: 100% !important;
+      padding: 0 5% !important;
+    }
+  
+    .hero-heading {
+      font-size: 4em !important;
+      text-align: center !important;
+    }
+  
+    .hero-subtext {
+      font-size: 1.2em !important;
+      text-align: center !important;
+    }
+  
+    .hero-buttons {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+  
+    .hero-stats {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+  
+    .hero-stats div {
+      width: 30% !important;
+    }
+  
+    .hero-cards {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+    }
+  
+    .hero-card {
+      width: 100% !important;
+      max-width: 350px !important;
+      text-align: center !important;
+    }
+  }
+  
+  /* Mobile Devices (max-width: 600px) */
+  @media (max-width: 600px) {
+    .hero-container {
+      width: 100% !important;
+      padding: 0 3% !important;
+    }
+  
+    .hero-heading {
+      font-size: 3em !important;
+    }
+  
+    .hero-subtext {
+      font-size: 1em !important;
+    }
+  
+    .hero-buttons {
+      flex-direction: column !important;
+    }
+  
+    .hero-button {
+      font-size: 1em !important;
+      padding: 1em !important;
+    }
+  
+    .hero-stats {
+      flex-direction: column !important;
+      gap: 1em !important;
+    }
+  
+    .hero-stats div {
+      width: 100% !important;
+    }
+  
+    .hero-cards {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+  
+    .hero-card {
+      width: 90% !important;
+      max-width: 300px !important;
+    }
+  }
+  
