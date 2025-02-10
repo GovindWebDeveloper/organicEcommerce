@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import '../Responsive/ResponsiveContent/Content.css'
+import "../Responsive/ResponsiveContent/Content.css";
 
 const SliderComponent = ({
   title,
@@ -41,7 +41,10 @@ const SliderComponent = ({
   };
 
   return (
-    <section className="slider-container" style={{ padding: "40px 20px", width: "100%", ...containerStyle }}>
+    <section
+      className="slider-container"
+      style={{ padding: "40px 20px", width: "100%", ...containerStyle }}
+    >
       <header
         style={{
           display: "flex",
@@ -51,7 +54,12 @@ const SliderComponent = ({
           margin: "auto",
         }}
       >
-        <h1 className="slider-header" style={{fontSize:"2em",marginBottom:"1em", ...titleStyle}}>{title}</h1>
+        <h1
+          className="slider-header"
+          style={{ fontSize: "2em", marginBottom: "1em", ...titleStyle }}
+        >
+          {title}
+        </h1>
 
         <div style={{ marginBottom: "1em" }}>
           {!viewAll ? (
@@ -95,7 +103,8 @@ const SliderComponent = ({
         </div>
       </header>
 
-      <div className="slider-cards"
+      <div
+        className="slider-cards"
         style={{
           display: "flex",
           flexWrap: viewAll ? "wrap" : "nowrap",
@@ -118,7 +127,7 @@ const SliderComponent = ({
         >
           {items.map((item) => (
             <Card
-            className="slider-card"
+              className="slider-card"
               key={item.id}
               hoverable
               style={{
@@ -138,9 +147,21 @@ const SliderComponent = ({
                   ...imageStyle,
                 }}
               />
-              <h3 className="slider-header" style={{ fontSize: "20px", ...imageTitleStyle }}>
+              <h3
+                className="slider-header"
+                style={{
+                  fontSize: "20px",
+                  whiteSpace:"nowrap",
+                  overflow:"hidden",
+                  textOverflow:"ellipsis",
+                  display:"block",
+                  ...imageTitleStyle,
+                }}
+              >
                 {item.title}
               </h3>
+              <h3>${item.price}</h3>
+              <Button>Add to Cart</Button>
             </Card>
           ))}
         </div>

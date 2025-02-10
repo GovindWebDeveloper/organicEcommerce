@@ -11,7 +11,6 @@ const Category = () => {
     async function fetchData() {
       try {
         const data = await getProducts();
-        console.log("fetched Data:", data);
         setProduct(data || []); // Ensure data is always an array
       } catch (error) {
         setError("Failed to load products"); // Store error message
@@ -29,7 +28,7 @@ const Category = () => {
 
       {/* Show the slider only if there are products */}
       {product.length > 0 ? (
-        <SliderComponent title="Category" items={product} />
+        <SliderComponent title="All Products" items={product} imageStyle={{ borderRadius: "0px" }} />
       ) : !error ? (
         <p>Loading products...</p> // Show loading message if API is still fetching
       ) : null}
