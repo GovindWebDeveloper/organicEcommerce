@@ -1,6 +1,6 @@
 // import Images from "../../../assets/Images/ImageComponent/Images";
 import { useState, useEffect } from "react";
-import SliderComponent from "../../../Component/SliderComponent/SliderComponent";
+import SliderComponent from "../../../Component/Card/CardComponent";
 import { getWomensWearProducts } from "../../../Services/ProductServices";
 
 // const categories = [

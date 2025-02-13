@@ -3,20 +3,30 @@ import {
   MenuOutlined,
   SearchOutlined,
   DownOutlined,
-  BookOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import { Space, Select, Input, Dropdown, Layout, Button } from "antd";
 import { items, options } from "./Menu";
 import { useState } from "react";
 import DrawerComponent from "./Drawer";
-import Modal from "../../Pages/Authentication/LoginModal";
+import { useNavigate } from "react-router";
+import { MdAppRegistration, PiSignIn } from "../../assets/Icon/Icon";
 
 const { Header } = Layout;
 
 const HeaderComponent = () => {
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
+  const handleClickLogin = () => {
+    navigate("/login");
+  };
+  const handleClickRegister = () => {
+    navigate("/register");
+  };
+  const handleClickCart = ()=> {
+    navigate("/ProductCart")
+  }
   return (
     <Header
       style={{
@@ -44,11 +54,13 @@ const HeaderComponent = () => {
       >
         {/* Logo */}
         <div>
-          <img
-            src={Images.OrganicLogo}
-            alt="Logo"
-            style={{ width: "150px", marginTop: "15px" }}
-          />
+          <a href="/">
+            <img
+              src={Images.OrganicLogo}
+              alt="Logo"
+              style={{ width: "150px", marginTop: "15px" }}
+            />
+          </a>
         </div>
 
         {/* Drawer Menu Button */}
@@ -128,11 +140,13 @@ const HeaderComponent = () => {
         </div>
       </div>
       <div style={{ display: "flex", gap: "15px" }}>
-        <Modal />
-        <Button>
-          <BookOutlined />
+        <Button onClick={handleClickLogin}>
+          <PiSignIn />
         </Button>
-        <Button>
+        <Button onClick={handleClickRegister}>
+          <MdAppRegistration />
+        </Button>
+        <Button onClick={handleClickCart}>
           <ShoppingCartOutlined />
         </Button>
       </div>

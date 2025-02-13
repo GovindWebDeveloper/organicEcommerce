@@ -1,5 +1,5 @@
 // import Images from "../../ImageComponent/Images";
-import SliderComponent from "../../../Component/SliderComponent/SliderComponent";
+import SliderComponent from "../../../Component/Card/CardComponent";
 import { useEffect, useState } from "react";
 import { getJewelleryProducts } from "../../../Services/ProductServices";
 
