@@ -1,5 +1,5 @@
 // import Images from "../../../assets/Images/ImageComponent/Images";
-import SliderComponent from "../../../Component/SliderComponent/SliderComponent";
+import SliderComponent from "../../../Component/Card/CardComponent";
 import { useState, useEffect } from "react";
 import { getElectronicsProducts } from "../../../Services/ProductServices";
 

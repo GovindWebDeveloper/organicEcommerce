@@ -34,6 +34,7 @@ import BgDiscountForm from "../../Images/banner-newsletter.jpg";
 import BlogImage1 from "../../Images/post-thumbnail-1.jpg";
 import BlogImage2 from "../../Images/post-thumbnail-2.jpg";
 import BlogImage3 from "../../Images/post-thumbnail-3.jpg";
+import BgImage from "../../Images/Bg-Online-Store.jpg";
 
 const Images = {
   OrganicLogo,
@@ -72,5 +73,6 @@ const Images = {
   BlogImage1,
   BlogImage2,
   BlogImage3,
+  BgImage,
 };
 export default Images;

@@ -1,6 +1,6 @@
 // import Images from "../../../assets/Images/ImageComponent/Images";
 import { useEffect, useState } from "react";
-import SliderComponent from "../../../Component/SliderComponent/SliderComponent"; // Ensure this path is correct
+import SliderComponent from "../../../Component/Card/CardComponent"; // Ensure this path is correct
 import {getMensWearProducts} from "../../../Services/ProductServices"
 
 // const categories = [

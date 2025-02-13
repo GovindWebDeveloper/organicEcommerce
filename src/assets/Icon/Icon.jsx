@@ -11,13 +11,18 @@ import {
   MdHealthAndSafety,
   MdOutlinePets,
   MdWash,
+  MdOutlineAddShoppingCart,
+  MdFavorite,
+  MdAppRegistration,
 } from "react-icons/md";
 import { FaBaby, FaGlassCheers, FaShoppingBag, FaLeaf } from "react-icons/fa";
 import { IoFishSharp } from "react-icons/io5";
-import { FaBreadSlice, FaBowlRice } from "react-icons/fa6";
+import { FaBreadSlice, FaBowlRice, FaCircleUser } from "react-icons/fa6";
 import { CiPillsBottle1 } from "react-icons/ci";
 import { RiFridgeLine } from "react-icons/ri";
 import { GrDeliver } from "react-icons/gr";
+import { IoLocation } from "react-icons/io5";
+import { PiSignIn } from "react-icons/pi";
 
 export {
   MdOutlinePets,
@@ -40,4 +45,10 @@ export {
   GrDeliver,
   FaLeaf,
   GiRecycle,
+  MdOutlineAddShoppingCart,
+  MdFavorite,
+  IoLocation,
+  PiSignIn,
+  MdAppRegistration,
+  FaCircleUser,
 };

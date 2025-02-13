@@ -35,12 +35,15 @@ const FooterComponent = () => {
         alignItems: "start",
         margin: "3em auto",
         gap: "60px",
+        backgroundColor:"white"
       }}
     >
       <div>
-        <img src={Images.OrganicLogo} width="240" height="70" alt="Logo" />
+        <a href="/">
+          <img src={Images.OrganicLogo} width="240" height="70" alt="Logo" />
+        </a>
         <div
-        className="footer-social-icons"
+          className="footer-social-icons"
           style={{
             fontSize: "25px",
             display: "flex",
